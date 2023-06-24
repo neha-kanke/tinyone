@@ -1,0 +1,257 @@
+:root {
+    --color--pri: #fcdb00;
+    --color--sec: #010101;
+    --color-dark: #000;
+    --color--white: #ffff;
+    --color--grey-1: #313841;
+    --color--grey-2: #555555;
+    --color--grey-3: #898989;
+
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+
+}
+
+.pri-heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--color--sec);
+    margin-bottom: 2.5rem;
+}
+
+.sec-heading {
+    font-size: 2rem;
+    color: var(--color--grey-1);
+    margin-bottom: 2.5rem;
+}
+
+.para {
+    color: var(--color--grey-1);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+
+}
+ 
+.header .navbar-default .navbar-toggle:focus,
+.header .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.header .navbar-default .navbar-toggle {
+    border-color: var(--color--sec);
+}
+
+
+.header .navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--color--sec);
+}
+
+
+
+.header {
+    background-color: var(--color--pri);
+
+}
+
+.section {
+    padding: 10rem 0;
+}
+
+.navbar-brand {
+    padding: 2.5px 1.5rem;
+}
+
+.header .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 7rem;
+}
+
+.header .navbar-brand img {
+    height: 50px;
+}
+
+.header .navbar-default .navbar-nav>li>a {
+    color: #010101;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.header .navbar-default .navbar-nav>li>a::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height:2px;
+    width: 0;
+    background-color: var(--color--sec);
+    transition: all 0.3s ease-in-out;
+}
+
+.header .navbar-default .navbar-nav>li>a:hover::before {
+    width : 100%;
+
+}
+
+.inspiration {
+    margin-top: 7.5rem;
+}
+
+.soical-icon a {
+    margin-right: 4rem;
+    color: var(--color--sec);
+}
+
+
+
+
+/**## feature section css ##**/
+
+.feature {
+    margin-bottom: 10px;
+}
+
+.feature {
+    background-color: var(--color--white);
+
+}
+
+.heading-wrap {
+    padding: 0 3.5rem;
+    margin-bottom: 9rem;
+}
+
+.featureThumb h2 {
+    font-size: 2.2rem;
+    color: var(--color--sec);
+    margin-top: 0;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.featureThumb p {
+    font-size: 1.6rem;
+    color: var(--color--grey-3);
+
+
+}
+
+.featureThumb {
+    margin-bottom: 9rem;
+}
+
+
+
+
+/**------------------------------------------------## contact section css -------------------------------------------------------------------------##**/
+
+
+.contact {
+    background-color: var(--color--sec);
+}
+
+
+.contact .pri-heading {
+    font-size: 3.2rem;
+    color: var(--color--pri);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.contact .sec-heading {
+    font-size: 2rem;
+    color: var(--color--grey-3);
+    font-weight: 400;
+    margin-bottom: 4.5rem;
+}
+
+.intouchBtn {
+    background-color: var(--color--pri);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color--sec);
+    border: 0.2rem solid yellow;
+    height: 5rem;
+
+}
+
+.intouchBtn:hover {
+    background-color: var(--color--sec);
+    color: var(--color--pri);
+    border-radius: 45%;
+
+}
+
+.signUpEmail::placeholder {
+    font-size: 1.6rem;
+    color: var(--color--grey-3);
+    font-weight: 400;
+}
+
+.signup {
+    margin-bottom: 8rem;
+
+}
+
+.signUpEmail {
+    height: 5rem;
+}
+
+.contact .soical-icon a {
+    margin-right: 4rem;
+    color: var(--color--pri);
+}
+
+.contact .soical-icon {
+    margin-bottom: 1.25rem;
+}
+
+.footerlink li,
+.footerlink a {
+    color: var(--color--white);
+}
+
+
+
+/**##  third section close ### **/
+
+@media all and (max-width:768px) {
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .inspiration {
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+
+    .navbar.navbar-default {
+        margin-bottom: 2rem;
+    }
+
+    .featureThumb {
+        margin-bottom: 3rem;
+    }
+
+    .signup.form-group {
+        margin-bottom: 4rem;
+    }
+
+    .button.intouchBtn {
+        margin-top: 2.5rem;
+    }
+
+}
